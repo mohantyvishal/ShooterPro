@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="score">
+    <p>Score :
+        <span class="topboard" id="scoreCurr">0</span>
+    </p>    
+    <p >Highest: 
+        <span class="topboard" id="highScore">0</span>
+    </p>
+    </div>
+
+    <div id="viewProfile" >
+        <button id="about"style="display:none;" onclick="openSection('aboutMe')">About me </button>
+        <button id="education"style="display:none;" onclick="openSection('educationMe')">Education</button>
+        <button id="skills" style="display:none;" onclick="openSection('skillsMe')">Skills</button>
+        <button id="projects" style="display:none;" onclick="openSection('projectsMe')">Projects</button>
+        <button id="contact" style="display:none;" onclick="openSection('contactMe')">Contact me </button>
+        <!-- few icons for Social media  -->
+    </div>
+
+    <!-- message diaplyed everytime a button gets unlocked -->
+    <div id="popUp" style="display:none;">  </div>     
+
+<!-- About me secton -->
+ <div id="aboutMe" class="sections"  >
+ <div class="section-content">
+    <span class="closeBtn"  onclick="closeSection('aboutMe')">&times</span>
+    <h2> Hello, i am Vishal Mohanty</h2>
+    <p> A passionate web developer and tech enthusiast currently pursuing my Masters in Informatics at the University of Delhi.
+I enjoy creating interactive, user-friendly applications and exploring the latest technologies in web and mobile development.</p>
+ </div>
+</div>
+
+
+<!-- Skills section -->
+<div id="skillsMe" class="sections" >
+    <div class="content">
+        <span class="closeBtn"  onclick="closeSection('skillsMe')">&times</span>
+        <h2> Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Data Analysis</li>
+            <li>Team Building</li>
+            <li>Python</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Education section -->
+<div id="educationMe" class="sections" >
+    <div class="content">
+        <span class="closeBtn"  onclick="closeSection('educationMe')">&times</span>
+        <h2> Education</h2>
+        <ul>
+            <br>
+            <li> Bachelors in Electronics </li>
+             <ul> university : Delhi university</ul>
+             <ul> Year of passing : 2024</ul>
+             <!-- line break -->
+                <br>
+            <li> Masters in Informatics</li>
+                <ul> university : Delhi university</ul>
+                <ul> Year of passing : 2026</l>
+        </ul>
+    </div>
+</div>
+
+<!-- Project section -->
+<div id="projectsMe" class="sections" >
+    <div class="content">
+        <span class="closeBtn"  onclick="closeSection('projectsMe')">&times</span>
+        <h2> Projects</h2>
+        <ul>
+            <br>
+            <li style="font-weight: 700;"> DU SOUTH CONNECT </li>
+             <ul>A mobile/web app for South Campus students, faculty, and visitors. Built with HTML, CSS, JS, and Firebase. </ul>
+             <br>
+            <li style="font-weight: 700;"> PERSONAL PORTFOLIO </li>
+            <ul>Interactive gamified portfolio created using HTML, CSS, and JavaScript.</ul>
+        </ul>
+    </div>
+</div>
+
+<!-- Contact section -->
+<div id="contactMe" class="sections" >
+    <div class="content">
+        <span class="closeBtn"  onclick="closeSection('contactMe')">&times</span>
+        <h2> Contact Me</h2>
+        <ul>
+            <br>
+            <li> Email :mohantyvishalvm10@gmail.com </li>
+            <br>
+            <li>github : <a href="https://github.com/mohantyvishal">https://github.com/mohantyvishal/</a></li>
+            <br>
+            <li>LinkedIn: <a href="www.linkedin.com/in/vishal-mohanty-3ba389225">www.linkedin.com/in/vishal-mohanty-3ba389225</a></li>
+
+        </ul>
+    </div>
+ </div>
+
+    <div id="scoreCard" >
+        <div>
+            <h1 id="finalScore">0</h1>
+            <p>Points</p>
+            <div>
+                <button id="startGameBtn">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
